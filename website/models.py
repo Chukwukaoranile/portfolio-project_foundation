@@ -33,6 +33,14 @@ class Contact(db.Model):
     message = db.Column(db.Text)
     date = db.Column(db.DateTime(timezone=True), default=func.now())
 
+class Volunteer(db.Model):
+    id = db.Column(db.integer, primary_key=True)\
+    name = db.Column(db.String(100))
+    phone_number = db.Column(db.integer, unique=True)
+    email = db.column(db.String(150))
+    address = db.Column(db.string(200))
+    profession = db.Column(db.String(50))
+
     def __init__(self, name, email, message):
         self.name = name
         self.email = email
