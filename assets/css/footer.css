@@ -1,0 +1,36 @@
+.w-25{
+    width: 25%;font-family: ;
+}
+
+
+
+footer{
+    color: white;
+    background-color: #0e1f3a;
+    margin-bottom: 0;
+    padding: 70px 0px;
+}
+
+.footer-container{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5rem;
+}
+
+.footer-title{
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.payment-img{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+i{
+    margin-right: 5px;
+}
