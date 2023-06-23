@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Acumin Pro', sans-serif;
+    src: url(/assets/fonts/Acumin-RPro.woff) format('woff');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+
+    font-family: 'Acumin Pro', sans-serif;
+
+}
+
+.d-flex{
+    display: flex;
+}
