@@ -24,15 +24,21 @@ footer{
     color: gray;
 }
 
-.payment-img{
+.footer-logo img{
+    width: 200px;
+    height: 200px;
+}
+
+/* .payment-img{
     width: 80%;
     height: 30px;
     border-radius: 5px;
     object-fit: contain;
-}
+} */
 
-i{
+.footer-icon i{
     margin-right: 5px;
+    
 }
 
 /* Smaller screen */
