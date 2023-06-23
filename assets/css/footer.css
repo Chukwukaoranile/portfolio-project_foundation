@@ -1,0 +1,92 @@
+.w-25{
+    width: 25%;font-family: ;
+}
+
+
+
+footer{
+    color: white;
+    background-color: #0e1f3a;
+    margin-bottom: 0;
+    padding: 70px 0px;
+}
+
+.footer-container{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5rem;
+}
+
+.footer-title{
+    margin-bottom: 20px;
+    color: gray;
+    padding-top: 50px;
+
+}
+
+.footer-logo img{
+    width: 200px;
+    height: 200px;
+}
+
+/* .payment-img{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    object-fit: contain;
+} */
+
+.fa-div i{
+    color: #ffc602;
+    
+}
+
+.fa-div{
+    border: 1px solid #ffc602;
+    justify-content: center;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    align-items: center; 
+    margin-right: 7px;
+    margin-top: 20px;
+}
+
+/* Smaller screen */
+@media screen and (max-width: 760px) {
+    .footer-container{
+        width: 100%;
+        padding: 0px 40px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .footer-container{
+        flex-wrap: wrap;
+        width: 90%;  
+        font-size: 17px;     
+    }
+    .w-25, .last{
+        width: 80%;
+    }
+
+    .footer-container div{
+        margin-top: 40px;
+    }
+     .footer-container .footer-icon{
+      font-size: 25px;
+      margin-top: 0px;
+    }
+
+    .footer-title{
+        margin-bottom: 10px;
+    }
+
+    .payment-img{
+        margin-top: 10px;
+    
+    }
+}
