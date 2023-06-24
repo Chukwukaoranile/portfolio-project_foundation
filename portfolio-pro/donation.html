@@ -9,37 +9,35 @@
   <body>
     <section class="donate">
       <form method="post">
-        <fieldset>
+        <fieldset class="bot">
           <legend><h3>Card Details</h3></legend>
           <p class="card">
             <label for="card-name">
               <p>Name</p>
-              <input type="text" name="card-name" />
+              <input type="text" name="card-name" class="boot" required />
             </label>
           </p>
           <p class="card">
             <label for="card-name">
               <p>Card Number</p>
-              <input type="number" name="card-number" />
+              <input type="number" name="card-number" class="boot" required />
             </label>
           </p>
           <p>Accepts credit and debit card types</p>
           <div class="details">
             <label for="month">
               <p>Expiration(mm/yy)</p>
-              <input type="text" name="month" required />
+              <input type="text" name="month" required class="holder" />
             </label>
           </div>
           <div class="details">
             <label for="code">
               <p>Security Code</p>
-              <input type="text" name="code" max="3" required />
+              <input type="text" name="code" max="3" required class="holder" />
             </label>
           </div>
         </fieldset>
-        <p>
-          <input type="submit" value="Submit" />
-        </p>
+        <button type="button">Submit</button>
       </form>
     </section>
   </body>

@@ -8,7 +8,7 @@
   </head>
   <body>
     <section class="volunteer">
-      <fieldset>
+      <fieldset class="bot">
         <legend>
           <h2>Join As Volunteer</h2>
         </legend>
@@ -19,6 +19,7 @@
               name="fullname"
               placeholder="John James Doe"
               required
+              class="holder"
             />
           </label>
           <label for="address">
@@ -27,10 +28,17 @@
               name="address"
               placeholder="Residential Address:"
               required
+              class="holder"
             />
           </label>
           <label for="email">
-            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              class="holder"
+            />
           </label>
           <label for="phone">
             <input
@@ -38,16 +46,13 @@
               name="phone"
               placeholder="0123-456-7890"
               pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              class="holder"
             />
           </label>
           <p>What is your profession?</p>
           <label for="profession">
             <input type="radio" name="profession" />Doctor
-          </label>
-          <label for="profession">
             <input type="radio" name="profession" />Nurse
-          </label>
-          <label for="profession">
             <input type="radio" name="profession" />Physiotherapist
           </label>
           <p>
@@ -57,29 +62,19 @@
             </label>
           </p>
           <p>Have you ever Volunteered before?</p>
-          <label for="more"
-            >Yes
-            <input type="radio" name="more" required />
+          <label for="more">
+            <input type="radio" name="more" required />Yes
+            <input type="radio" name="more" required />NO
           </label>
-          <label for="more"
-            >NO
-            <input type="radio" name="more" required />
-          </label>
-          <fieldset>
-            <legend>
-              <h3>Why do you want to be volunteer?</h3>
-            </legend>
-            <textarea
-              name="reason"
-              id="reason"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-          </fieldset>
-          <p>
-            <input type="submit" value="Submit" />
-          </p>
+          <h3>Why do you want to be volunteer?</h3>
+          <textarea
+            name="reason"
+            id="reason"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button type="button">Submit</button>
         </form>
       </fieldset>
     </section>

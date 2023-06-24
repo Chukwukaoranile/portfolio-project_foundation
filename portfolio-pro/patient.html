@@ -8,7 +8,7 @@
   </head>
   <body>
     <section class="patient">
-      <fieldset>
+      <fieldset class="bot">
         <legend>
           <h2>Patient's Personal Information</h2>
         </legend>
@@ -52,21 +52,15 @@
               required
             />
           </label>
-          <fieldset>
-            <legend>
-              <h3>Is there any other thing you will like to tell us?</h3>
-            </legend>
-            <textarea
-              name="reason"
-              id="reason"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-          </fieldset>
-          <p>
-            <input type="submit" value="Submit" />
-          </p>
+          <h3>Is there any other thing you will like to tell us?</h3>
+          <textarea
+            name="reason"
+            id="reason"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button type="button">Submit</button>
         </form>
       </fieldset>
     </section>
