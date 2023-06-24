@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Volunteer</title>
+  </head>
+  <body>
+    <section class="volunteer">
+      <fieldset>
+        <legend>
+          <h2>Join As Volunteer</h2>
+        </legend>
+        <form method="post">
+          <label for="fullname">
+            <input
+              type="text"
+              name="fullname"
+              placeholder="John James Doe"
+              required
+            />
+          </label>
+          <label for="address">
+            <input
+              type="text"
+              name="address"
+              placeholder="Residential Address:"
+              required
+            />
+          </label>
+          <label for="email">
+            <input type="email" name="email" placeholder="Email" required />
+          </label>
+          <label for="phone">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="0123-456-7890"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+            />
+          </label>
+          <p>What is your profession?</p>
+          <label for="profession">
+            <input type="radio" name="profession" />Doctor
+          </label>
+          <label for="profession">
+            <input type="radio" name="profession" />Nurse
+          </label>
+          <label for="profession">
+            <input type="radio" name="profession" />Physiotherapist
+          </label>
+          <p>
+            <label for="profession"
+              >Others Specify:
+              <input type="text" name="profession" />
+            </label>
+          </p>
+          <p>Have you ever Volunteered before?</p>
+          <label for="more"
+            >Yes
+            <input type="radio" name="more" required />
+          </label>
+          <label for="more"
+            >NO
+            <input type="radio" name="more" required />
+          </label>
+          <fieldset>
+            <legend>
+              <h3>Why do you want to be volunteer?</h3>
+            </legend>
+            <textarea
+              name="reason"
+              id="reason"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </fieldset>
+          <p>
+            <input type="submit" value="Submit" />
+          </p>
+        </form>
+      </fieldset>
+    </section>
+  </body>
+</html>

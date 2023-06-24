@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patients</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="patient">
+      <fieldset>
+        <legend>
+          <h2>Patient's Personal Information</h2>
+        </legend>
+        <form method="post">
+          <label for="fullname">
+            <input
+              type="text"
+              name="fname"
+              placeholder="John James Doe"
+              required
+            />
+          </label>
+          <label for="address">
+            <input type="text" name="address" placeholder="Address" required />
+          </label>
+          <label for="age">
+            <input type="date" name="age" placeholder="Age" required />
+          </label>
+          <label for="email">
+            <input
+              type="email"
+              name="email"
+              placeholder="examples@email.com"
+              required
+            />
+          </label>
+          <label for="phone">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+          </label>
+          <label for="diagnosis">
+            <input
+              type="text"
+              name="diagnosis"
+              placeholder="Diagnosis"
+              required
+            />
+          </label>
+          <fieldset>
+            <legend>
+              <h3>Is there any other thing you will like to tell us?</h3>
+            </legend>
+            <textarea
+              name="reason"
+              id="reason"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </fieldset>
+          <p>
+            <input type="submit" value="Submit" />
+          </p>
+        </form>
+      </fieldset>
+    </section>
+  </body>
+</html>
