@@ -35,7 +35,7 @@
     background-color: #0e1f3a;
     color: white;
     margin-bottom: 20rem;
-    padding: 30px 0px 70px 0px;
+    padding: 30px 0px 100px 0px;
 }
 
 .mission h2{
@@ -54,7 +54,7 @@
     /* margin: auto; */
     width: 60%;
     justify-content: space-between;
-    top: 74rem;
+    top: 73rem;
     right: 20rem;
  
 }
@@ -67,26 +67,34 @@
     
 }
 
-.unknown{
+.mission-points p{
+    background-color: #ffc602;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.mission-img{
     justify-content: center;
     align-items: center;
 }
 
-.unknown span, .unknown i{
+/* .mission-img span, .mission-img i{
     font-size: 6rem;
     color: #21bf73;
-    /* font-weight: 200; */
-    /* background-color: red; */
-    /* padding-left: 20px; */
-}
+    font-weight: 200;
+    background-color: red;
+    padding-left: 20px;
+} */
 
-.unknown img{
-    width: 80px;
-    height: 80px;
+.mission-img img{
+    width: 5rem;
+    height: 120px;
     font-weight: 900;
+    padding: 20px 0px;
+    object-fit: contain;
 }
 
-/* .unknown .small-img{
+/* .mission-img .small-img{
     width: 180px;
     height: 180px;
     
@@ -95,6 +103,35 @@
 .lorem{
     margin-top: 100px;
 }
+
+/* ABOUT US */
+
+.empty-div{
+    height: 12rem;
+    width: 15rem;
+    background-color: #21bf73;
+    border-radius: 5px;
+}
+
+.about-us{
+    position: relative;
+    /* padding: 40px; */
+}
+
+.aboutus-img img{
+    height: 16rem;
+    width: 14rem;
+    object-fit: contain;
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    border-radius: 10px;
+    /* padding: 50px; */
+}
+
+
+
+
 /* BLOG */
 
 .blog-container{
@@ -181,7 +218,7 @@
 
 .contact-form button{
     position: absolute;
-    right: 126px;
+    right: 165px;
     top: 5px;
     padding: 10px 40px;
     border-radius: 50px;
