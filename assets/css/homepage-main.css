@@ -1,7 +1,31 @@
-main{
-    /* margin: auto;
-    width: 70%; */
+/* main{
+    margin: auto;
+    width: 70%;
     margin-bottom: 30px;
+} */
+
+.main-img1 img{
+    /* width: 45%; */
+    height: 40rem;
+    object-fit: contain;
+    border-radius: 30px;
+    margin-right: 20px;
+    
+}
+
+.main-intro .h1{
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.main-intro{
+    /* background-color: red; */
+    margin: auto;
+    width: 80%;
+    /* justify-content: space-between; */
 }
 
 /* BLOG */
