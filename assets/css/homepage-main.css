@@ -49,7 +49,7 @@
 
 /* UNKNOWN */
 
-.unknown-container{
+.mission_cards-container{
     position: absolute;
     /* margin: auto; */
     width: 50%;
@@ -59,14 +59,38 @@
  
 }
 
-.unknown{
+.mission-points{
     /* border: 1px solid red; */
     width: 22%;
     height: 100px;
-    background-color: white;
-    
+    background-color: white;  
     
 }
+
+.unknown{
+    justify-content: center;
+    align-items: center;
+}
+
+.unknown span, .unknown i{
+    font-size: 6rem;
+    color: #21bf73;
+    /* font-weight: 200; */
+    /* background-color: red; */
+    /* padding-left: 20px; */
+}
+
+.unknown img{
+    width: 80px;
+    height: 80px;
+    font-weight: 900;
+}
+
+/* .unknown .small-img{
+    width: 180px;
+    height: 180px;
+    
+} */
 
 .lorem{
     margin-top: 100px;

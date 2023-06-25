@@ -29,3 +29,7 @@ body{
 .yellow{
     color: #ffc602;
 }
+
+.block{
+    display: block;
+}
