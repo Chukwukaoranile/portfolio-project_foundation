@@ -8,12 +8,12 @@ footer{
     color: white;
     background-color: #0e1f3a;
     margin-bottom: 0;
-    padding: 70px 0px;
+    padding: 40px 0px;
 }
 
 .footer-container{
     margin: auto;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     line-height: 1.5rem;
@@ -24,6 +24,13 @@ footer{
     color: gray;
     padding-top: 50px;
 
+}
+
+.footer-contact i{
+    margin-right: 8px;
+    /* padding-bottom: 0px;
+    background-color: red; */
+    line-height: 25px;
 }
 
 .footer-logo img{
