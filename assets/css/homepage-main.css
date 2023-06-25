@@ -25,7 +25,26 @@
     /* background-color: red; */
     margin: auto;
     width: 80%;
+    margin-bottom: 50px;
     /* justify-content: space-between; */
+}
+
+/* OUR MISSION */
+
+.mission{
+    background-color: #0e1f3a;
+    color: white;
+    margin-bottom: 30px;
+    padding: 30px 0px 50px 0px;
+}
+
+.mission h2{
+    color: #ffc602;
+}
+.mission-container{
+    margin: auto;
+    width: 60%;
+    line-height: 35px;
 }
 
 /* BLOG */
