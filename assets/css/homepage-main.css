@@ -34,7 +34,7 @@
 .mission{
     background-color: #0e1f3a;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 20rem;
     padding: 30px 0px 70px 0px;
 }
 
@@ -47,12 +47,12 @@
     line-height: 35px;
 }
 
-/* UNKNOWN */
+
 
 .mission_cards-container{
     position: absolute;
     /* margin: auto; */
-    width: 50%;
+    width: 60%;
     justify-content: space-between;
     top: 74rem;
     right: 20rem;
