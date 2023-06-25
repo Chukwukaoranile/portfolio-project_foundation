@@ -108,27 +108,89 @@
 
 .empty-div{
     height: 12rem;
-    width: 15rem;
-    background-color: #21bf73;
+    width: 15.2rem;
+    background-color:#21bf73;
     border-radius: 5px;
+    float: right;
 }
 
 .about-us{
-    position: relative;
+    
+    
     /* padding: 40px; */
+    background-color: rgb(240, 234, 234);
+}
+
+.aboutus-container{
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
 }
 
 .aboutus-img img{
-    height: 16rem;
+    border-radius: 5px;
+    height: 12rem;
     width: 14rem;
-    object-fit: contain;
+    object-fit: cover;
     position: absolute;
-    top: -50px;
-    left: 0px;
-    border-radius: 10px;
+    top: 7.8rem;
+    right: 18px;
+   
     /* padding: 50px; */
 }
 
+.aboutus-img{
+    border-radius: 10px;
+}
+
+.aboutus-info2{
+    width: 45%;
+    position: relative;
+}
+
+.aboutus-info1{
+    width: 50%;
+    padding: 20px;
+    /* background-color: white; */
+}
+
+.aboutus-info-img img{
+    height: fit-content;
+    width: 20rem;
+    object-fit: contain;
+    border-radius: 50px;
+    
+}
+
+.aboutus-info-img{
+    background-color:#21bf73;
+}
+
+.aboutus-info-img .m{
+    height: 13rem;
+    width: 20rem;
+    object-fit: contain;
+    border-top-right-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+   
+}
+
+.cp-img{
+    /* justify-content: space-between; */
+    margin-bottom: 0px 0px;
+
+}
+
+.about-us p{
+    font-size: 1.3rem;
+    line-height: 24px;
+}
+
+.about-us h2{
+    font-size: 2.3rem;
+    padding: 50px;
+}
 
 
 
