@@ -25,6 +25,7 @@
 
 nav p{
     padding: 20px 20px;
+    transition: font-size 0.3s ease;
 
 }
 
@@ -48,8 +49,7 @@ nav .donate{
    
 }
 
-.nav-container p:hover{
-    /* opacity: 0.1; */
-    /* border-bottom: 2px solid #ffc602; */
+nav p:hover{
+   font-size: 1.5rem;
     
  }
