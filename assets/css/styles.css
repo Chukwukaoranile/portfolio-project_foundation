@@ -21,3 +21,15 @@ body{
 .d-flex{
     display: flex;
 }
+
+.t-center{
+    text-align: center;
+}
+
+.yellow{
+    color: #ffc602;
+}
+
+.block{
+    display: block;
+}
