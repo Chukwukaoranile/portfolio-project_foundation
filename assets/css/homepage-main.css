@@ -44,7 +44,7 @@
     border-top: 3px solid #ffc602;
     margin: auto;
     width: 25%;
-    /* margin-bottom: 0px; */
+    margin-bottom: 20px;
     padding: 10px;
 }
 
@@ -64,7 +64,7 @@
     /* margin: auto; */
     width: 60%;
     justify-content: space-between;
-    top: 73rem;
+    top: 74rem;
     right: 20rem;
  
 }
@@ -225,6 +225,7 @@
 .donate-cause{
     text-decoration: none;
     color: #21bf73;
+    /* padding: 10px; */
     
 }
 
