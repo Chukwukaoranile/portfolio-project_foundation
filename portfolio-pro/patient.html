@@ -9,9 +9,7 @@
   <body>
     <section class="patient">
       <fieldset class="bot">
-        <legend>
-          <h2>Patient's Personal Information</h2>
-        </legend>
+        <h2 class="legend">Patient's Personal Information</h2>
         <form method="post">
           <label for="fullname">
             <input
@@ -19,19 +17,33 @@
               name="fname"
               placeholder="John James Doe"
               required
+              class="divided"
             />
           </label>
           <label for="address">
-            <input type="text" name="address" placeholder="Address" required />
+            <input
+              type="text"
+              name="address"
+              placeholder="Address"
+              required
+              class="divided"
+            />
           </label>
           <label for="age">
-            <input type="date" name="age" placeholder="Age" required />
+            <input
+              type="date"
+              name="age"
+              placeholder="Age"
+              class="divided"
+              required
+            />
           </label>
           <label for="email">
             <input
               type="email"
               name="email"
               placeholder="examples@email.com"
+              class="divided"
               required
             />
           </label>
@@ -41,6 +53,7 @@
               name="phone"
               placeholder="Phone Number"
               pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              class="divided"
               required
             />
           </label>
@@ -50,6 +63,7 @@
               name="diagnosis"
               placeholder="Diagnosis"
               required
+              class="divided"
             />
           </label>
           <h3>Is there any other thing you will like to tell us?</h3>

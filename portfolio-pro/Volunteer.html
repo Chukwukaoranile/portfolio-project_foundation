@@ -9,15 +9,13 @@
   <body>
     <section class="volunteer">
       <fieldset class="bot">
-        <legend>
-          <h2>Join As Volunteer</h2>
-        </legend>
+        <h2 class="legend">Join As Volunteer</h2>
         <form method="post">
           <label for="fullname">
             <input
               type="text"
               name="fullname"
-              placeholder="John James Doe"
+              placeholder="Name"
               required
               class="holder"
             />
@@ -26,7 +24,7 @@
             <input
               type="text"
               name="address"
-              placeholder="Residential Address:"
+              placeholder="Residential Address"
               required
               class="holder"
             />
@@ -44,36 +42,40 @@
             <input
               type="tel"
               name="phone"
-              placeholder="0123-456-7890"
+              placeholder="Phone Number"
               pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
               class="holder"
             />
           </label>
-          <p>What is your profession?</p>
-          <label for="profession">
-            <input type="radio" name="profession" />Doctor
-            <input type="radio" name="profession" />Nurse
-            <input type="radio" name="profession" />Physiotherapist
-          </label>
-          <p>
-            <label for="profession"
-              >Others Specify:
-              <input type="text" name="profession" />
-            </label>
-          </p>
-          <p>Have you ever Volunteered before?</p>
-          <label for="more">
-            <input type="radio" name="more" required />Yes
-            <input type="radio" name="more" required />NO
-          </label>
-          <h3>Why do you want to be volunteer?</h3>
-          <textarea
-            name="reason"
-            id="reason"
-            cols="30"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
+          <div class="control">
+            <div class="create">
+              <label for="profession">What is your profession? </label>
+
+              <select id="profession" name="profession">
+                <option value="doctor">Doctor</option>
+                <option value="nurse">Nurse</option>
+                <option value="physiotherapist">Physiotherapist</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+            <div class="divide">
+              <p>Have you ever Volunteered before?</p>
+              <input type="radio" id="yes" name="more" required />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="more" required />
+              <label for="no">No</label>
+            </div>
+          </div>
+          <div class="show">
+            <h3>Why do you want to be a volunteer?</h3>
+            <textarea
+              name="reason"
+              id="reason"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
           <button type="button">Submit</button>
         </form>
       </fieldset>
