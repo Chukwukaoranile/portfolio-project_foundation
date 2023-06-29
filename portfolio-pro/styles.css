@@ -3,47 +3,52 @@
   width: 100%;
   font-family: Verdana, Arial, sans-serif;
   background-color: #ffffff;
-  margin: 0;
-  padding: 0; 
+  margin: auto;
+  padding: 0;
 }
 
-section .volunteer {
-  width: 80%;
-}
-
-.legend {
+legend {
   position: relative;
-  max-width: 500px;
-  margin: 60px auto;
+  display: block;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  align-items: center;
   text-align: center;
+  font-size: 1.3rem;
+  font-weight: 650;  
+  padding-inline-start: 0;
+  padding-inline-end: 0;
 }
 
-.legend:before {
+legend:before {
   content: " ";
-  display: block;
+  display: inline-flex;
   height: 2px;
-  width: 25%;
+  width: 30%;
   position: absolute;
   top: 50%;
-  left: -10px;
+  left: -5px;
   background: #ffc602;
 }
 
-.legend:after {
+legend:after {
   content: " ";
-  display: block;
+  display: inline-flex;
   height: 2px;
-  width: 25%;
+  width: 30%;
   position: absolute;
   top: 50%;
-  right: -10px;
+  right: -5px;
   background: #ffc602;
 }
 
 fieldset {
+  position: absolute;
+  left: 25%;
+  display: flex;
   width: 60%;
   margin: auto;
-  padding: 30px;
   border: none;
   align-items: center;
 }
@@ -55,31 +60,34 @@ fieldset {
 
 .divide {
   position:relative;
-  width: 50%;
-  padding: 30px;
+  display: inline-block;
+  width: 35%;
+  padding: 25px;
 }
 
 .create {
-  position: relative;
-  width: 50%;
-  padding: 30px;
+  position: absolute;
+  display: inline-block;
+  width: 35%;
+  padding: 25px;
 }
 
 input {
-  max-width: 90%;
-  padding: 0.8rem;
-  margin: 3%;
+  width: 70%;
+  padding: 0.7rem;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 20px;;
 }
 
 .divide input {
   border: none;
-  margin: 0;
-  width: auto;
+  margin: auto;
 }
 
-.show p {
+/* .show p {
   margin-bottom: 15px;
-} 
+}  */
 
 .create label {
   margin: 20px auto;
@@ -92,45 +100,38 @@ input, select, textarea {
 }
 
 select {
-  width: 90%;
+  width: 80%;
   height: 2.5rem;
   margin-top: 10px;;
 }
 
-.show {
-  width: 100%;
-  display: block;
+/* .show {
+  width: 80%;
   align-items: center;
-}
+} */
 
 h3 {
   text-align: center;
-  display: block;
+  display: flex;
   margin: 20px;
 }
 
 textarea {
-  max-width: 90%;
+  width: 75%;
   margin: auto;
-  display: flex;
+  margin-top: 20px;
 }
 
 button {
-  width: 100%;
+  width: 75%;
   padding: 10px;
-  text-align: center;
   background-color: #21bf73;
-  color: #f39741;
-  margin: 20px;
+  color: #fff;
+  margin: auto;
   border: none;
+  margin-top: 20px;
   border-radius: 5px;
   font-weight: 600;
-}
-
-.bot {
-  width: 60%;
-  align-items: center;
-  margin: auto;
 }
 
 h4 {
@@ -138,10 +139,11 @@ h4 {
 }
 
 .divided {
-  width: 40%;
+  position: relative;
+  width: 35%;
   padding: 10px;
   margin: 10px;
-  display: inline;
+  display: inline-flex;
 }
 
 .divided input {
