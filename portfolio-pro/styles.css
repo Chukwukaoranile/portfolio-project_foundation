@@ -8,7 +8,7 @@
 }
 
 legend {
-  position: relative;
+  /* position: relative; */
   display: block;
   max-width: 80%;
   margin: auto;
@@ -26,7 +26,7 @@ legend:before {
   display: inline-flex;
   height: 2px;
   width: 30%;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   left: -5px;
   background: #ffc602;
@@ -37,15 +37,15 @@ legend:after {
   display: inline-flex;
   height: 2px;
   width: 30%;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   right: -5px;
   background: #ffc602;
 }
 
 fieldset {
-  position: absolute;
-  left: 25%;
+  /* position: absolute;
+  left: 25%; */
   display: flex;
   width: 60%;
   margin: auto;
@@ -55,20 +55,23 @@ fieldset {
 
 .control {
   display: flex;
-  position: relative;
+  width: 70%;
+  margin: auto;
+  border: 1px solid black;
+  /* position: relative; */
 }
 
 .divide {
-  position:relative;
+  /* position:relative; */
   display: inline-block;
-  width: 35%;
+  width: 100%;
   padding: 25px;
 }
 
 .create {
-  position: absolute;
+  /* position: absolute; */
   display: inline-block;
-  width: 35%;
+  width: 100%;
   padding: 25px;
 }
 
@@ -139,7 +142,7 @@ h4 {
 }
 
 .divided {
-  position: relative;
+  /* position: relative; */
   width: 35%;
   padding: 10px;
   margin: 10px;
