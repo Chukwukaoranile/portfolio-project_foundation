@@ -33,15 +33,21 @@
                   class="divided"
                 />
               </label>
-              <label for="age">
-                <input
-                  type="number"
-                  name="age"
-                  placeholder="Age"
-                  class="divided"
-                  required
-                />
-              </label>
+              <div class="separate d-flex">
+                <div class="age input1">
+                  <p>Age:</p>
+                </div>
+                <div class="type input1">
+                  <label for="age">
+                    <input
+                      type="datetime"
+                      name="age"
+                      class="divided"
+                      required
+                    />
+                  </label>
+                </div>
+              </div>
             </div>
 
             <div class="phone-email">
@@ -86,7 +92,7 @@
               id="reason"
               cols="30"
               rows="5"
-              placeholder="Is there any other thing you will like to tell us?"
+              placeholder="Diagnosis Details ..."
             ></textarea>
           </div>
           <button type="button">Submit</button>

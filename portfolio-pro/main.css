@@ -17,7 +17,7 @@
 .volunteer {
   margin: auto;
   width: 55%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 fieldset {
@@ -28,7 +28,13 @@ fieldset {
   width: 50%;
   margin: auto;
   border-top: 3px solid #ffc602;
-  margin-bottom: 10px;;
+}
+
+legend {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 form {
@@ -38,11 +44,15 @@ form {
 
 form input {
   display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
   border: 3px solid #ffc602;
   border-radius: 5px;
+}
+
+form ::placeholder {
+  padding-left: 15px;
 }
 
 .input2 input {
@@ -54,13 +64,45 @@ form input {
   justify-content: space-between;
 }
 
+.separate {
+  width: 100%;
+}
+
+.separate input {
+  width: 7.7rem; 
+}
+
+div .age {
+  width: 15%;
+  display: flex;
+}
+
+.age p {
+  display: inline;
+  text-align: center;  
+  margin-right: 2px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+div .type {
+  width: 25%;
+  display: flex;  
+  margin-left: 1.5rem;
+}
+
 .control {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .create {
   width: 50%;
   margin-right: 5px;
+}
+
+.create select {
+  border-radius: 5px;
 }
 
 .divide {
@@ -69,6 +111,12 @@ form input {
 
 .divide input {
   display: inline;
+}
+
+.divide p {
+  font-size: 15px;
+  font-weight: 530;
+  padding-bottom: 8px;
 }
 
 .create select {
@@ -87,10 +135,14 @@ form input {
   border-radius: 5px;
 }
 
+textarea::placeholder {
+  padding-top: 10px;
+}
+
 button {
   width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #21bf73;
   border: none;
   border-radius: 5px;
