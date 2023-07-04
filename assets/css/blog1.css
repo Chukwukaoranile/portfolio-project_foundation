@@ -75,6 +75,15 @@ a{
     margin-bottom: 20px;
 }
 
+.sidebar-container a h4{
+    color: black;
+    
+}
+
+.sidebar-container a{
+    text-decoration: none;
+}
+
 
 /* OTHER RTICLES */
 
