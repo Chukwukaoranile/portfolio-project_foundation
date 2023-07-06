@@ -81,7 +81,7 @@
     /* margin: auto; */
     width: 60%;
     justify-content: space-between;
-    top: 69rem;
+    top: 76rem;
     right: 17rem;
     z-index: 1;
     /* background-color: #0e1f3a; */
@@ -345,7 +345,7 @@
 
 .contact-form button{
     position: absolute;
-    right: 128px;
+    right: 140px;
     top: 5px;
     padding: 10px 40px;
     border-radius: 50px;
