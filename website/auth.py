@@ -6,10 +6,9 @@ auth = Blueprint('auth', __name__)
 @auth.route("/")
 def home():
         return render_template("views.home")
-
+'''
 @auth.route('/beneficiary', methods=['GET', 'POST'])
 def beneficiary():
-    user = None
     if request.method == 'POST':
         email = request.form.get('email')
         name = request.form.get('Name')
@@ -27,13 +26,38 @@ def beneficiary():
         else:
             # Rest of your code to create the Beneficiary instance
             # ...
-            new_user = Volunteer(email=email, name=name, phone_number=phone_number, profession=profession, password=generate_password_hash(password1, method='sha256'))
+            new_user = Volunteer(email=email, name=name, phone_number=phone_number, diagnoses=diagnoses)
             db.session.add(new_user)
             db.session.commit()
             flash('Successful! Thanks for joining us. We will reach out to you soon', category='success')
             return redirect(url_for('views.home'))
 
-    return render_template("views.beneficiary", user=user)
+    return render_template("beneficiary.html")
+'''
+@auth.route('/beneficiary', methods=['GET', 'POST'])
+def beneficiary():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        name = request.form.get('Name')
+        phone_number = request.form.get('phone_number')
+        diagnoses = request.form.get('diagnoses')
+        message = request.form.get('message')
+
+        # To Check if any required field is missing
+        if not email or not name or not phone_number or not diagnoses or not message:
+            flash('Please fill in all the fields.', category='error')
+        elif len(email) < 4:
+            flash('Email must be greater than 3 characters.', category='error')
+        elif len(name) < 2:
+            flash('Name must be greater than 1 character.', category='error')
+        else:
+            new_user = Volunteer(email=email, name=name, phone_number=phone_number, diagnoses=diagnoses)
+            db.session.add(new_user)
+            db.session.commit()
+            flash('Successful! Thanks for joining us. We will reach out to you soon', category='success')
+            return redirect(url_for('views.home'))
+
+    return render_template("beneficiary.html")
 
 
 @auth.route('/volunteer', methods=['GET', 'POST'])
@@ -53,14 +77,14 @@ def volunteer():
         elif len(name) < 2:
             flash('Name must be greater than 1 character.', category='error')
 
-            new_user = Volunteer(email=email, name=name, phone_number=phone_number, profession=profession, password=generate_password_hash(password1, method='sha256'))
+            new_user = Volunteer(email=email, name=name, phone_number=phone_number, address=address, profession=profession)
             db.session.add(new_user)
             db.session.commit()
             login_user(new_user, remember=True)
             flash('Successful! Thanks for joining us. We will reach out to you soon', category='success')
             return redirect(url_for('views.home'))
 
-    return render_template("views.volunteer")
+    return render_template("volunteer.html")
 
 
 @auth.route("/about")

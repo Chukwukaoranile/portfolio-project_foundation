@@ -10,6 +10,7 @@ def home():
 
 @views.route('/beneficiary', methods=['GET', 'POST'])
 def beneficiary():
+    
       if request.method == 'POST':
         email = request.form.get('email')
         name = request.form.get('name')
@@ -25,7 +26,7 @@ def beneficiary():
         elif len(name) < 2:
             flash('Name must be greater than 1 character.', category='error')
         
-            new_beneficiary = Beneficiary(email=email, name=name, phone_number=phone_number, diagnoses=diagnoses, message=message, password=generate_password_hash(password1, method='sha256'))
+            new_beneficiary = Beneficiary(email=email, name=name, phone_number=phone_number, diagnoses=diagnoses, message=message)
             db.session.add(new_beneficiary)
             db.session.commit()
             flash('Thanks for Joining us, we will reach out to you!', category='success')
@@ -50,7 +51,7 @@ def volunteer():
         elif len(name) < 2:
             flash('Name must be greater than 1 character.', category='error')
 
-            new_volunteer = Volunteer(email=email, name=name, phone_number=phone_number, profession=profession, password=generate_password_hash(password1, method='sha256'))
+            new_volunteer = Volunteer(email=email, name=name, phone_number=phone_number, profession=profession)
             db.session.add(new_volunteer)
             db.session.commit()
             flash('Successful! Thanks for joining us. We will reach out to you soon', category='success')
