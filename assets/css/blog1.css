@@ -88,7 +88,7 @@ a{
 /* OTHER RTICLES */
 
 .see-more{
-     margin: auto;
+    margin: auto;
     width: 90%;
 }
 .see-more h3{
@@ -98,7 +98,7 @@ a{
 .other-articles{
     /* margin: auto;
     width: 70%; */
-    /* justify-content: space-between; */
+    justify-content: space-between;
 
     gap: 2rem;
     margin-bottom: 50px;
@@ -107,6 +107,10 @@ a{
 .other-articles p{
     font-size: 0.7rem;
 
+}
+
+.other-articles_cards{
+    width: 50%;
 }
 
 .other-articles a{
