@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patients</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container d-flex">
+      <section class="volunteer">
+        <fieldset class="bot">
+          <legend>Join As Beneficiary</legend>
+        </fieldset>
+        <form method="post">
+          <div class="input1 d-flex">
+            <div class="name-address">
+              <label for="fullname">
+                <input
+                  type="text"
+                  name="fname"
+                  placeholder="Name"
+                  required
+                  class="divided"
+                />
+              </label>
+              <label for="address">
+                <input
+                  type="text"
+                  name="address"
+                  placeholder="Address"
+                  required
+                  class="divided"
+                />
+              </label>
+              <div class="separate d-flex">
+                <div class="age input1">
+                  <p>Age:</p>
+                </div>
+                <div class="type input1">
+                  <label for="age">
+                    <input
+                      type="datetime"
+                      name="age"
+                      class="divided"
+                      required
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="phone-email">
+              <label for="phone">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+                  class="divided"
+                  required
+                />
+              </label>
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  class="divided"
+                  required
+                />
+              </label>
+              <label for="diagnosis">
+                <input
+                  type="text"
+                  name="diagnosis"
+                  placeholder="Diagnosis"
+                  required
+                  class="divided"
+                />
+              </label>
+            </div>
+
+            <!-- <div class="age-diagnosis">
+              
+            </div> -->
+          </div>
+
+          <div class="t-area">
+            <textarea
+              name="reason"
+              id="reason"
+              cols="30"
+              rows="5"
+              placeholder="Diagnosis Details ..."
+            ></textarea>
+          </div>
+          <button type="button">Submit</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

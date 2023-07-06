@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Volunteer</title>
+  </head>
+  <body>
+    <div class="container d-flex">
+      <section class="volunteer">
+        <fieldset class="bot">
+          <legend>Join As Volunteer</legend>
+        </fieldset>
+        <form method="post">
+          <div class="input1">
+            <div class="name-address input2">
+              <label for="fullname">
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Name"
+                  required
+                  class="holder"
+                />
+              </label>
+              <label for="address">
+                <input
+                  type="text"
+                  name="address"
+                  placeholder="Residential Address"
+                  required
+                  class="holder"
+                />
+              </label>
+            </div>
+
+            <div class="phone-email input2">
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  class="holder"
+                />
+              </label>
+              <label for="phone">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+                  class="holder"
+                />
+              </label>
+            </div>
+          </div>
+
+          <div class="control d-flex">
+            <div class="create">
+              <label for="profession"> </label>
+              <select id="profession" name="profession">
+                <option value="what is your profession?">
+                  What is your profession?
+                </option>
+                <option value="doctor">Doctor</option>
+                <option value="nurse">Nurse</option>
+                <option value="physiotherapist">Physiotherapist</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+            <div class="divide">
+              <p>Have you Volunteered before?</p>
+              <input type="radio" id="yes" name="more" required />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="more" required />
+              <label for="no">No</label>
+            </div>
+          </div>
+          <!-- <div class="show">
+            <textarea
+              name="reason"
+              id="reason"
+              cols="30"
+              rows="10"
+              placeholder="Why do you want to be a volunteer?"
+            ></textarea>
+          </div> -->
+          <button type="button">Submit</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
