@@ -10,8 +10,7 @@ def home():
 
 @views.route('/beneficiary', methods=['GET', 'POST'])
 def beneficiary():
-    
-      if request.method == 'POST':
+    if request.method == 'POST':
         email = request.form.get('email')
         name = request.form.get('name')
         phone_number = request.form.get('phone_number')
@@ -32,7 +31,7 @@ def beneficiary():
             flash('Thanks for Joining us, we will reach out to you!', category='success')
             return redirect(url_for('views.home'))
         
-        return render_template("beneficiary.html")
+    return render_template("beneficiary.html")
 
 @views.route('/volunteer', methods=['GET', 'POST'])
 def volunteer():

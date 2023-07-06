@@ -5,19 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    #flash-messages {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 300px;
-  z-index: 9999;
-}
-
-.alert {
-  margin-bottom: 10px;
-}
-  </style>
 </head>
 <body>
   {% with messages = get_flashed_messages(with_categories=true) %}

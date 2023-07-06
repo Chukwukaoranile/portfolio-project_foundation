@@ -50,6 +50,8 @@ def beneficiary():
             flash('Email must be greater than 3 characters.', category='error')
         elif len(name) < 2:
             flash('Name must be greater than 1 character.', category='error')
+        elif len(phone_number) < 4:
+            flash('Invalid Phone Number', category='error')
         else:
             new_user = Volunteer(email=email, name=name, phone_number=phone_number, diagnoses=diagnoses)
             db.session.add(new_user)
@@ -72,8 +74,14 @@ def volunteer():
         user = Volunteer.query.filter_by(email=email).first()
         if user:
             flash('Email already exists.', category='error')
+        elif not email or not name or not phone_number or not address or not profession:
+            flash('Please fill in all the fields.', category='error')
         elif len(email) < 4:
             flash('Email must be greater than 3 characters.', category='error')
+        elif len(address) < 3:
+            flash('Invalid Address, must be greater than 3 characters.', category='error')
+        elif len(profession) < 2:
+            flash('Sorry no Abbrevation, proffession must be greater than 2 characters.', category='error')
         elif len(name) < 2:
             flash('Name must be greater than 1 character.', category='error')
 
