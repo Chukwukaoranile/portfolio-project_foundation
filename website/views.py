@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, flash, jsonify
 from flask_login import login_required, current_user
-from .models import Note
+from .models import  Volunteer, Beneficiary
 from . import db, mail
 import json
 from flask_mail import Message
@@ -9,7 +9,7 @@ from flask_mail import Mail
 views = Blueprint('views', __name__)
 mail = Mail()
 
-77
+
 @views.route('/', methods=['GET', 'POST'])
 @login_required
 def home():
@@ -26,7 +26,10 @@ def home():
 
     return render_template("home.html", user=current_user)
 
-
+'''
+@views.route("/volunteer", methods=["GET", "POST"])
+def volunteer():
+    return render_template("views.volunteer", user=current_user)
 
 @views.route('/delete-note', methods=['POST'])
 def delete_note():  
@@ -71,7 +74,7 @@ def save_contact(name, email, message):
     contact = Contact(name=name, email=email, message=message)
     db.session.add(contact)
     db.session.commit()
-
+'''
 
 @views.route("/about")
 def about():
