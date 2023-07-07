@@ -1,21 +1,77 @@
-{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
-%}
-<h1 align="center">Notes</h1>
-<ul class="list-group list-group-flush" id="notes">
-  {% for note in user.notes %}
-  <li class="list-group-item">
-    {{ note.data }}
-    <button type="button" class="close" onClick="deleteNote({{ note.id }})">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </li>
-  {% endfor %}
-</ul>
-<form method="POST">
-  <textarea name="note" id="note" class="form-control"></textarea>
-  <br />
-  <div align="center">
-    <button type="submit" class="btn btn-primary">Add Note</button>
-  </div>
-</form>
-{% endblock %}
+                                <img src="assets/images/card image1.jpg" alt="Imag of the writer">
+                            </div>
+
+                            <div class="writer-name d-flex">
+                                <p>By blogger</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </section> 
+            </section>
+
+            <section class="contactus-container">
+                <h2 class="contact-title">Contact Us</h2>
+                <form action="mailto:info@inclusiokids.com" class="contact-form">
+                    <input id="myInput" type="email" placeholder="Enter your Email Address">
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+
+                <div class="footer-logo">
+                    <img src="assets/images/favicon.png" alt="">
+                </div>
+                <div class="w-25">
+                    <h4 class="footer-title">About Us</h4>
+                    <p>Join us in our mission to provide hope and support for children with cerebral palsy.</p>
+                </div>
+                <div class="footer-contact w-25">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-location-pin yellow"></i>
+                        <p>Addres: Enugu, Nigeria.</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-phone yellow"></i>
+                        <p>Phone Number: (+234)80 12345678 </p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-envelope yellow"></i>
+                        <p>Email: info@inclusiokids.com</p>
+                    </div>
+                </div>
+                <!-- <div class="w-25">
+                    <h4 class="footer-title">Donate</h4>
+                    <p>Support our mission</p>
+                    <img class="payment-img" src="assets/images/payment-2.png" alt="Payment option image">
+                </div> -->
+                <div class="last">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <p>Stay updated</p>
+                    <div class="footer-icon d-flex">
+                        <div class="fa-div d-flex">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="fa-div d-flex">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="fa-div d-flex">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="fa-div d-flex">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
