@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 db = SQLAlchemy()
 DB_NAME = "database.db"
+app = Flask(__name__, static_url_path='/static')
 
 
 def create_app():
