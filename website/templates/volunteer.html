@@ -1,92 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  {% with messages = get_flashed_messages(with_categories=true) %}
-  {% if messages %}
-    <div id="flash-messages">
-      {% for category, message in messages %}
-        {% if category == 'error' %}
-          <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            {{ message }}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://kit.fontawesome.com/ea26a1f5e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+   <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" /> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage-main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ozymain.css') }}">
+    <title>InclusioKids Africa Volunteer</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="nav-logo">
+            <img src="/static/images/logo 1.png" alt="" />
           </div>
-        {% else %}
-          <div class="alert alert-success alert-dismissible fade show" role="alert">
-            {{ message }}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <div><p>Home</p></div>
+          <div><p>About Us</p></div>
+          <div><p>Blog</p></div>
+          <div class="d-flex">
+            <span class="material-symbols-outlined"> volunteer_activism </span>
+            <p class="donate">Donate</p>
           </div>
-        {% endif %}
-      {% endfor %}
+          <div><p>Volunteer</p></div>
+        </div>
+      </nav>
+    </header>
+    <div class="container d-flex">
+      <section class="volunteer">
+        <fieldset class="bot">
+          <legend>Join As Volunteer</legend>
+        </fieldset>
+
+	<form  method="post">
+          <div class="input1">
+            <div class="name-address input2">
+              <label for="fullname">
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Name"
+                  required
+                  class="holder"
+                />
+              </label>
+              <label for="address">
+                <input
+                  type="text"
+                  name="address"
+                  placeholder="Residential Address"
+                  required
+                  class="holder"
+                />
+              </label>
+            </div>
+
+            <div class="phone-email input2">
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  class="holder"
+                />
+              </label>
+              <label for="phone">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  class="holder"
+                />
+              </label>
+            </div>
+          </div>
+
+          <div class="control d-flex">
+            <div class="create">
+              <label for="profession"> </label>
+              <select id="profession" name="profession">
+                <option value="what is your profession?">
+                  What is your profession?
+                </option>
+                <option value="doctor">Doctor</option>
+                <option value="nurse">Nurse</option>
+                <option value="physiotherapist">Physiotherapist</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+            <div class="divide">
+              <p>Have you Volunteered before?</p>
+              <input type="radio" id="yes" name="more" required />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="more" required />
+              <label for="no">No</label>
+            </div>
+          </div>
+          <!-- <div class="show">
+            <textarea
+              name="reason"
+              id="reason"
+              cols="30"
+              rows="10"
+              placeholder="Why do you want to be a volunteer?"
+            ></textarea>
+          </div> -->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </div>
-  {% endif %}
-{% endwith %}
-  
-  <form method="POST">
-    <h3 align="center">Volunteer</h3>
-    <div class="form-group">
-      <label for="email">Email Address</label>
-      <input
-        type="email"
-        class="form-control"
-        id="email"
-        name="email"
-        placeholder="Enter email"
-      />
-    </div>
-  
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input
-        type="text"
-        class="form-control"
-        id="name"
-        name="name"
-        placeholder="Enter  Name"
-      />
-    </div>
-  
-    <div class="form-group">
-      <label for="phone_number">Phone Number</label>
-      <input type="tel"
-      class="form-control"
-      id="phone_number"
-      name="phone_number"
-      placeholder="Enter Phone Number" />
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/static/images/favicon.png" alt="" />
+        </div>
+        <div class="w-25">
+          <h4 class="footer-title">About Us</h4>
+          <p>
+            Join us in our mission to provide hope and support for children with
+            cerebral palsy.
+          </p>
+        </div>
+        <div class="w-25">
+          <h4 class="footer-title">Contact Info</h4>
+          <p>Addres: Enugu, Nigeria.</p>
+          <p>Phone Number: (+234)80 12345678</p>
+          <p>Email: info@inclusiokids.com</p>
+        </div>
+        <!-- <div class="w-25">
+              <h4 class="footer-title">Donate</h4>
+              <p>Support our mission</p>
+              <img class="payment-img" src="assets/images/payment-2.png" alt="Payment option image">
+          </div> -->
+        <div class="last">
+          <h4 class="footer-title">Follow Us</h4>
+          <p>Stay updated</p>
+          <div class="footer-icon d-flex">
+            <div class="fa-div d-flex">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="fa-div d-flex">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="fa-div d-flex">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="fa-div d-flex">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
       </div>
-  
-      <div class="form-group">
-      <label for="address">Address</label>
-      <input type="textarea"
-        class="form-control"
-        id="address"
-        name="address"
-        placeholder="Enter Address"
-      />
-    </div>
-  
-    <div class="form-group">
-      <label for="profession">Profession</label>
-      <input type="text"
-      class="form-control"
-      id="profession"
-      name="profession"
-      placeholder="Enter Profession"
-      />
-    </div>
-    
-       
-    <br />
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-  
-</body>
+    </footer>
+  </body>
 </html>
