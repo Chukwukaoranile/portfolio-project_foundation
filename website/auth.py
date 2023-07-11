@@ -62,7 +62,7 @@ def beneficiary():
             flash('Successful! Thanks for joining us. We will reach out to you soon', category='success')
             return redirect(url_for('views.home'))
 
-     return render_template("beneficiary.html")
+    return render_template("beneficiary.html")
 
 
 @auth.route('/volunteer', methods=['GET', 'POST'])

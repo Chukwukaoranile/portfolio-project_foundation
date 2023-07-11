@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
-    <link rel="icon" href="website/templates/assets/images/favicon.png" />
+   <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" /> 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage-main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/ozymain.css') }}">
     <title>InclusioKids Africa Volunteer</title>
@@ -45,29 +45,8 @@
         <fieldset class="bot">
           <legend>Join As Volunteer</legend>
         </fieldset>
-	{% with messages = get_flashed_messages(with_categories=true) %}
-  {% if messages %}
-    {% for category, message in messages %}
-      {% if category == 'error' %}
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-          {{ message }}
-          <button type="button" class="close" data-dismiss="alert">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      {% else %}
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-          {{ message }}
-          <button type="button" class="close" data-dismiss="alert">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-{% endwith %}
 
-	<form action="{{ url_for('auth.volunteer') }}" method="post">
+	<form  method="post">
           <div class="input1">
             <div class="name-address input2">
               <label for="fullname">
@@ -105,7 +84,6 @@
                   type="tel"
                   name="phone"
                   placeholder="Phone Number"
-                  pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
                   class="holder"
                 />
               </label>
