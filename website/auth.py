@@ -98,6 +98,18 @@ def volunteer():
     return render_template("volunteer.html")
 
 
-@auth.route("/about")
-def about():
-    return render_template("views.about")
+@auth.route("/aboutUs")
+def aboutUs():
+    return render_template("views.aboutUs")
+
+@auth.route("/blog1")
+def blog1():
+    return render_template("views.blog1")
+
+@auth.route("/blog2")
+def blog2():
+    return render_template("views.blog2")
+
+@auth.route("/blog3")
+def blog3():
+    return render_template("views.blog3")

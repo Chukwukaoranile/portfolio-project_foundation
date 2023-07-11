@@ -69,10 +69,21 @@ def volunteer():
 
     return render_template("volunteer.html")
 
-@views.route("/about")
-def about():
-    return render_template("about.html")
+@views.route("/aboutUs")
+def aboutUs():
+    return render_template("aboutUs.html")
 
+@views.route("/blog1")
+def blog1():
+    return render_template("blog1.html")
+
+@views.route("/blog2")
+def blog2():
+    return render_template("blog2.html")
+
+@views.route("/blog3")
+def blog3():
+    return render_template("blog3.html")
 
 '''
 from flask import Blueprint, render_template, request, flash
