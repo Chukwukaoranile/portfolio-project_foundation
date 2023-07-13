@@ -225,16 +225,21 @@
 .causes-container{
     justify-content: space-between;
     margin-top: 40px;
+    margin: auto;
+    width: 70%;
 }
 
 .causes-img{
     width: 30%;
+    text-align: center;
+
   
 }
 
 .causes-img img{
-    width: 100%;
-    width: 100%;
+    width: 90%;
+    height: 20vh;
+    object-fit: cover;
     border: 5px solid white ;
     border-radius: 5px;
 }
@@ -360,16 +365,24 @@
     border: none;
 }
 
-/* @media screen and (max-width:1200px 1380) {
+@media screen and (max-width: 1280px) {
     .mission_cards-container{
-        top: 83rem;
+        top: 89rem;
         right: 15rem;
     }
 
     .contact-form button{
         right: 135px;
     }
-} */
+
+    input, button{
+        font-size: 0.9rem;
+    }
+     .section-title-text{
+        font-size: 1.5rem;
+    }
+    
+}
 
 @media screen and (max-width:1024px) {
     .mission{
@@ -377,7 +390,7 @@
     }
     
     .mission_cards-container{
-        top: 75rem;
+        top: 83rem;
         right: 12rem;
     }
 
@@ -401,13 +414,29 @@
     .mission-points p{
         font-size: 1rem;
     }
+
+    .causes-container{
+        width: 90%;
+    }
+    
     
 } 
 
 @media screen and (max-width: 912px) {
-    .mission_cards-container{
+    /* .mission_cards-container{
         top: 72rem;
         right: 12rem;
+    } */
+
+    .mission_cards-container{
+        top: 83rem;
+        width: 90%;
+        gap: 1rem;
+        right: 3rem;
+    }
+
+    .mission-points p{
+        font-size: 1.3rem;
     }
 
     .about-us h2{
@@ -417,12 +446,49 @@
         width: 40%;
     }
 
+    .section-title-text{
+        font-size: 1.5rem;
+    }
+
     .blog-title{
         width: 20%;
     }
 
+    .about-us p{
+        font-size: 1.5rem;
+        line-height: 26px;
+    }
+
+    .blog-container p{
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
     .contact-form button{
         right: 96px;
+    }
+
+    .causes-img img{
+        height: 15vh;
+    }
+
+    .aboutus-btn button{
+        padding: 10px 40px;
+        font-size: 1rem;
+    }
+
+    .contactus-container{
+        width: 70%;
+    }
+
+    .contact-form input{
+        height: 65px;
+    }
+    
+    .contact-form button{
+        right: 134px;
+        top: 8px;
+        padding: 16px 40px;
     }
 }
 
@@ -432,7 +498,7 @@
     }
 
     .mission-points p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .mission_cards-container{
@@ -444,13 +510,17 @@
         width: 30%;
     }
 
+    /* .section-title-text{
+        font-size: 10rem;
+    } */
+
     .section-title-text{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .mission_cards-container{
-        top: 74rem;
-        right: 7.5rem;
+        top: 86rem;
+        right: 8.5rem;
     }
     
     .mission{
@@ -466,7 +536,38 @@
     }
 
     .contact-form button{
+        top: 0.4rem;
         right: 89px;
     }
+
+    input, button{
+        font-size: 1.1rem;
+    }
+
+    .contact-form input{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutus-img{
+        display: none;
+    }
+    .aboutus-info2{
+        width: 100%;
+    }
+
+    .about-us h2{
+        width: 40%;
+    }
+}
+
+.causes{
+    width: 85%;
+}
+
+.causes-img{
+    width: 35%;
+  
 }
 
