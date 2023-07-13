@@ -353,3 +353,14 @@
     border: none;
 }
 
+@media screen and (max-width:1280px) {
+    .mission_cards-container{
+        top: 89rem;
+        right: 15rem;
+    }
+
+    .contact-form button{
+        right: 135px;
+    }
+}
+
