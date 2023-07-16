@@ -23,7 +23,7 @@
     height: auto;
     object-fit: cover;
     margin-bottom: 0px;
-    margin-top: 70px;
+    margin-top: 50px;
   
 }
 
@@ -295,7 +295,8 @@
 
 .card-img img{
     width: 100%;
-    height: auto;
+    height: 40vh;
+    object-fit: cover;
    
 }
 
@@ -412,11 +413,15 @@
     }
 
     .mission-points p{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .causes-container{
         width: 90%;
+    }
+    .blog-container p{
+        font-size: 1.2rem;
+        line-height: 1.7rem;
     }
     
     
@@ -452,6 +457,9 @@
 
     .blog-title{
         width: 20%;
+    }
+    .card-img img{
+        height: 20vh;
     }
 
     .about-us p{
@@ -501,6 +509,10 @@
         font-size: 1.2rem;
     }
 
+    .aboutus-img{
+        margin-top: 8rem;
+    }
+
     .mission_cards-container{
         width: 70%;
         gap: 1rem;
@@ -519,7 +531,7 @@
     }
 
     .mission_cards-container{
-        top: 86rem;
+        top: 84rem;
         right: 8.5rem;
     }
     
@@ -560,6 +572,19 @@
     .about-us h2{
         width: 40%;
     }
+
+    .mission_cards-container{
+        top: 86rem;
+        right: 8.5rem;
+    }
+
+    .section-title{
+        width: 50%;
+    }
+
+    .blog-title{
+        width: 25%;
+    }
 }
 
 .causes{
@@ -571,3 +596,76 @@
   
 }
 
+@media screen and (max-width: 540px) {
+    .section-title{
+        width: 70%;
+    }
+
+    .section-title-text{
+        font-size: 1.3rem;
+    }
+
+    .mission_cards-container{
+        top: 82rem;
+        right: 7.2rem;
+    }
+
+    .mission-points p{
+        font-size: 0.8rem;
+    }
+
+    .about-us h2{
+        width: 50%;
+    }
+
+    .aboutus-title + p{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .causes-container{
+        width: 100%;
+    }
+    
+    .causes-img{
+        width: 32%; 
+    }
+    
+    .causes-img img{
+        border: 2px solid white ;
+    }
+
+    .blog-title{
+        width: 19%;
+        margin-bottom: 2rem;
+    }
+
+    .blog-container{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .card-img img{
+        height: 40vh;
+    }
+
+    .card{
+        margin: auto;
+        width: 80%;   
+    }
+
+    .contact-form input{
+        width: 80%;
+        font-size: 0.7rem;
+        height: 50px;
+    }
+    
+    .contact-form button{
+        right: 44px;
+        top: 4.59px;
+        padding: 10px 40px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    
+}
