@@ -41,6 +41,10 @@
     font-size: 2rem;
 } */
 
+.nav-options{
+    width: 70%;
+    justify-content: space-between;
+}
 
 
 .main-intro{
