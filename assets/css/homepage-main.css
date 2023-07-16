@@ -382,6 +382,11 @@
      .section-title-text{
         font-size: 1.5rem;
     }
+
+    .blog-container p{
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
     
 }
 
@@ -434,7 +439,7 @@
     } */
 
     .mission_cards-container{
-        top: 83rem;
+        top: 81rem;
         width: 90%;
         gap: 1rem;
         right: 3rem;
@@ -561,7 +566,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 798px) {
     .aboutus-img{
         display: none;
     }
@@ -574,7 +579,7 @@
     }
 
     .mission_cards-container{
-        top: 86rem;
+        top: 84rem;
         right: 8.5rem;
     }
 
@@ -667,5 +672,137 @@
 }
 
 @media screen and (max-width: 414px) {
+    .section-title{
+        width: 80%;
+        font-size: 1.5rem;
+    }
     
+    .mission_cards-container{
+        top: 94rem;
+        right: 6.2rem;
+        
+    }
+
+    .mission{
+        margin-bottom: 5rem;
+    }
+
+    .mission-yellow{
+        display: none;
+    }
+
+    .about-us h2{
+        width: 50%;
+        font-size: 1.5rem;
+    }
+
+    .causes{
+        width: 100%;
+    }
+
+    .causes-img{
+        width: 33%; 
+    }
+
+
+    .blog-title{
+        width: 19%;
+        font-size: 1.5rem;
+    }
+
+    .card-img img{
+        height: 40vh;
+    }
+
+    .card{
+        margin: auto;
+        width: 90%;   
+    }
+
+    .card-img img{
+        height: 25vh;
+    }
+
+    .contactus-container{
+        width: 90%;
+    }
+    
+    .contact-form input{
+        width: 95%;
+    }
+    
+    .contact-form button{
+        right: 12px;
+        top: 4.59px;
+    }
+}
+
+@media screen and (max-width: 393px){
+    .mission_cards-container{
+        top: 102rem;
+        right: 6.6rem;  
+    }
+
+    .card-img img{
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .mission_cards-container{
+        right: 6.4rem; 
+    }
+}
+
+@media screen and (max-width: 360px){
+    .mission_cards-container{
+        right: 6.4rem; 
+    }
+}
+
+@media screen and (max-width: 360px){
+
+    .section-title{
+        width: 100%;
+    }
+    
+    .mission_cards-container{
+        top: 123rem;
+        right: 5.4rem;
+        
+    }
+
+    .mission{
+        margin-bottom: 4rem;
+    }
+
+    .about-us h2{
+        width: 80%;
+    }
+    .aboutus-btn a{
+        font-size: 0.8rem;
+    }
+
+    .aboutus-btn button{
+        padding: 10px;
+    }
+
+    .causes{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .causes-title{
+        width: 70%;
+    }
+
+    .blog-title{
+        width: 25%;
+    }
+
+
+    .blog-container{
+        width: 97%;
+    }
+
 }

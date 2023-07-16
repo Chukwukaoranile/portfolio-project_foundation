@@ -113,7 +113,7 @@ nav p:hover{
 .disappear-container a{
     color: white;
     text-decoration: none;
-    transition: padding 0.3s ease;
+    transition: font-size 0.3s ease;
 }
 
 .disappear-container li{
@@ -124,7 +124,7 @@ nav p:hover{
 .disappear-container a:hover{
     /* text-decoration: underline; */
     /* border-bottom: 2px solid #ffc602; */
-    padding: 5px;
+    font-size: 1.2rem;
     
 }
 
@@ -133,11 +133,12 @@ nav p:hover{
     display: none;
     margin-top: 3rem;
     padding-top:1rem;
-
+    text-align: center;
     right: -1rem;
     background-color:#0e1f3a;
     line-height: 3rem;
-    padding-right: 4rem;
+    padding-right: 3rem;
+    padding-left: 2rem;
     
 }
 
@@ -156,6 +157,8 @@ nav p:hover{
     }
 }
 
-@media screen and (max-width: 414px) {
-    
+@media screen and (max-width: 280px) {
+    .dis-menu{
+        margin-right: 2rem;
+    }
 }
