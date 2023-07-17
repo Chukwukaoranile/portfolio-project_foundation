@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 db = SQLAlchemy()
 DB_NAME = "database.db"
-
+app = Flask(__name__, static_url_path='/assets')
 
 def create_app():
     app = Flask(__name__)
